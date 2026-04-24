@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bunny Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 40px;
+            background: #ffe6f0;
+            text-align: center;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            max-width: 350px;
+            margin: 0 auto;
+        }
+        h1 { color: #ff6b9d; }
+        .info {
+            background: #fff0f5;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>🐰 My Bunny</h1>
+        <div id="result"></div>
+    </div>
+
+    <script src="bunny.js"></script>
+    <script>
+        document.getElementById('result').innerHTML = `
+            <div class="info"><strong>Name:</strong> ${bunny.name}</div>
+            <div class="info"><strong>Age:</strong> ${bunny.age}</div>
+            <div class="info"><strong>Happy:</strong> ${bunny.isHappy}</div>
+        `;
+        console.log(bunny);
+    </script>
+</body>
+</html>
